@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jared's Summer</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/webdevTemplate/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="mysummer.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       Navigation Bar
+  ============================ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Summer</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <!-- Toggle menu icon -->
+        <div class="container" onclick="toggleMenu()" style="cursor: pointer;">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <!-- Navigation links -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Activities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Travels</a>
+        </li>
+      </ul>
+      <!-- Search Form -->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+  
+  <!-- ===========================
+       Hero Image / Jumbotron
+  ============================ -->
+  <div class="jumbotron jumbotron-fluid hero-image">
+    <div class="container text-center">
+      <button type="button" class="btn btn-outline-warning" style="float: left;">Subscribe</button>
+        <!-- Include Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<!-- Social Icons Container -->
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" class="social-icon twitter" aria-label="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://github.com" target="_blank" class="social-icon github" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+      <h1 class="display-4">MY SUMMER 2025!</h1>
+      <p class="lead">Discover More About My Summer!</p>
+    </div>
+  </div>
+
+  <hr class="custom-hr" />
+
+  <!-- ===========================
+       Activities Carousel
+  ============================ -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-20 mt-4 mt-lg-0">
+        <div id="imgCarousel" class="carousel slide" data-bs-ride="carousel">
+          
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="2"></button>
+          </div>
+          
+          <!-- Carousel Content -->
+          <div class="container">
+            <h2 class="text-center mb-4">ACTIVITIES</h2>
+            <div class="carousel-inner">
+              
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center flex-wrap p-3">
+                  <!-- Activity 1 -->
+                  <div class="text-center mx-2 mb-4" style="width: 300px; height: 300;">
+                    <img src="/jared 3.jpg" class="img-fluid rounded" alt="Coding" />
+                    <div class="mt-3">
+                      <h4>Developing with a team</h4>
+                      <p class="small">We were tasked to make our own website as a team for our Human Computer Interaction subject (HCI).</p>
+                    </div>
+                  </div>
+                  <!-- Activity 2 -->
+                  <div class="text-center mx-2 mb-4" style="width: 300px; height: 300;">
+                    <img src="/calcu.png" class="img-fluid rounded" alt="Calcu jquery" />
+                    <div class="mt-3">
+                      <h4>Jquery Calculator</h4>
+                      <p class="small">We made a Jquery Calculator.</p>
+                    </div>
+                  </div>
+                  <!-- Activity 3 -->
+                  <div class="text-center mx-2 mb-4" style="width: 300px; height: 300;">
+                    <img src="/Trash collect.jpg" class="img-fluid rounded" alt="bottle collecting" />
+                    <div class="mt-3">
+                      <h4>Fund Raising in NSTP</h4>
+                      <p class="small">Scavenge some Plastic Bottles in the trashcans or just the way in the school.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center flex-wrap p-3">
+                  <!-- Activity 4 -->
+                  <div class="text-center mx-2 mb-4" style="width: 300px; height: 300;">
+                    <img src="/ktv2.jpg" class="img-fluid rounded" alt="Ktv with the Bois" />
+                    <div class="mt-3">
+                      <h4>Ktv with the Bois</h4>
+                      <p class="small">I sang some songs with the bois this my first time in a ktv box.</p>
+                    </div>
+                  </div>
+                  <!-- Activity 5 -->
+                  <div class="text-center mx-2 mb-4" style="width: 300px; height: 300;">
+                    <img src="/grad.jpg" class="img-fluid rounded" alt="Tingot" />
+                    <div class="mt-3">
+                      <h4>Attended my Cousin's Graduation</h4>
+                      <p class="small">I attended my cousin's graduation because she told me to be her escort.</p>
+                    </div>
+                  </div>
+                  <!-- Activity 6 -->
+                  <div class="text-center mx-2 mb-4" style="width: 300px; height: 300;">
+                    <img src="/jared me.jpg" class="img-fluid rounded" alt="Guitar" />
+                    <div class="mt-3">
+                      <h4>Music Session</h4>
+                      <p class="small">Practice some chords as a beginner.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center flex-wrap p-3">
+                  <!-- Activity 7 -->
+                  <div class="text-center mx-2 mb-4" style="width: 250px; height: 300;">
+                    <img src="/sky and planet.png" class="img-fluid rounded" alt="Sky and planet" />
+                    <div class="mt-3">
+                      <h4>Adding Planet to the Sky Activity</h4>
+                      <p class="small">Blend an image to another image</p>
+                    </div>
+                  </div>
+                  <!-- Activity 8 -->
+                  <div class="text-center mx-2 mb-4" style="width: 350px; height: 400;">
+                    <img src="/ayaka.png" class="img-fluid rounded" alt="Ayaka" />
+                    <div class="mt-3">
+                      <h4>Reflection Activity</h4>
+                      <p class="small">Made a reflection of ayaka.</p>
+                    </div>
+                  </div>
+                  <!-- Activity 9 -->
+                  <div class="text-center mx-2 mb-4" style="width: 400px; height: 400;">
+                    <img src="/re 2 almost finished.png" class="img-fluid rounded" alt="Photoshop Case Study" />
+                    <div class="mt-3">
+                      <h4>Photoshop Case Study</h4>
+                      <p class="small">My two favorite game in 1 setting.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- End carousel-inner -->
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#imgCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imgCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+          </div> <!-- End carousel slide -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <hr class="custom-hr" />
+
+  <!-- ===========================
+       Travel Cards Section
+  ============================ -->
+  <div class="container">
+    <h2 class="text-center mb-4">Travels</h2>
+    <div class="row justify-content-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card" style="width: 100%; max-width: 300px;">
+          <div class="date-badge mb-3">
+            <span class="day">22</span>
+            <span class="month">April</span>
+          </div>
+          <img src="/bangus fest.jpg" class="card-img-top img-thumbnail" alt="bangus fest" />
+          <div class="card-body">
+            <h5 class="card-title text-center">Bangus Festival</h5>
+            <p class="card-text">"Goes to the Kalutan Ed Dalan with the Bois"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card" style="width: 100%; max-width: 300px;">
+          <div class="date-badge mb-3">
+            <span class="day">29</span>
+            <span class="month">MAY</span>
+          </div>
+          <img src="/museum.jpg" class="card-img-top img-thumbnail" alt="museum" />
+          <div class="card-body">
+            <h5 class="card-title text-center">Banaan Museum</h5>
+            <p class="card-text">"Explored the Historical and Cultural things in the Lingayen."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card" style="width: 100%; max-width: 300px;">
+          <div class="date-badge mb-3">
+            <span class="day">10</span>
+            <span class="month">MARCH</span>
+          </div>
+          <img src="/LES.jpg" class="card-img-top img-thumbnail" alt="charizard" />
+          <div class="card-body">
+            <h5 class="card-title text-center">Lucao Elementary School</h5>
+            <p class="card-text">"Travelled to Lucao Elementary School for the NSTP subject."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card" style="width: 100%; max-width: 300px;">
+          <div class="date-badge mb-3">
+            <span class="day">10</span>
+            <span class="month">MARCH</span>
+          </div>
+          <img src="/jared na my glasses.jpg" class="card-img-top img-thumbnail" alt="wency house" />
+          <div class="card-body">
+            <h5 class="card-title text-center">Wency's House</h5>
+            <p class="card-text">"Travelled to tebeng to do some activities with wency."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card" style="width: 100%; max-width: 300px;">
+          <div class="date-badge mb-3">
+            <span class="day">05</span>
+            <span class="month">APRIL</span>
+          </div>
+          <img src="/angkong.jpg" class="card-img-top img-thumbnail" alt="angkong" />
+          <div class="card-body">
+            <h5 class="card-title text-center">Angkong Noodle House</h5>
+            <p class="card-text">"Goes to the Angkong Noodle House to Celebrate my Grandmother's Birthday."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card" style="width: 100%; max-width: 300px;">
+          <div class="date-badge mb-3">
+            <span class="day">20</span>
+            <span class="month">APRIL</span>
+          </div>
+          <img src="/artwork.jpg" class="card-img-top img-thumbnail" alt="art" />
+          <div class="card-body">
+            <h5 class="card-title text-center">Art Exhibit</h5>
+            <p class="card-text">"Art Gallery displayed in Nepo Mall."</p>
+          </div>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-between align-items-start">
+    <div class="flex-fill" style="min-width: 60%;">
+
+      <div class="row justify-content-center">
+      </div>
+    </div>
+
+
+    <!-- Right: Contact/Subscribe Form -->
+    <div class="p-3 bg-light border rounded" style="max-width: 300px; min-width: 200px; margin-left: 20px;">
+      <h5>Contact Me</h5>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  
+
+
+
+  <!-- ===========================
+       Footer
+  ============================ -->
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2025 My Summer. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
